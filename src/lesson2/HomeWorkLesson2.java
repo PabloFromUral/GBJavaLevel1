@@ -7,8 +7,8 @@ public class HomeWorkLesson2 {
         System.out.println("\r\n1 - задание");
         int[] arr1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (
-            int i = 0;
-            i < arr1.length; i++) {
+                int i = 0;
+                i < arr1.length; i++) {
             arr1[i] = arr1[i] == 1 ? 0 : 1;
             System.out.print(arr1[i] + " ");
         }
@@ -18,6 +18,13 @@ public class HomeWorkLesson2 {
         int[] arr2 = new int[8];
         for (int i = 1, j = 0; i < arr2.length; i++) arr2[i] = j += 3;
         for (int x : arr2) System.out.print(x + " ");
-
+        //3. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом,
+        // и числа меньшие 6 умножить на 2;
+        System.out.println("\r\n3 - задание");
+        int[] arr3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < arr3.length; i++) {
+            if (arr3[i] < 6) arr3[i] *= 2;
+            System.out.print(arr3[i] + " ");
+        }
     }
 }
